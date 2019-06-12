@@ -25,6 +25,8 @@ class ChangeAnswersNullable extends Migration
      */
     public function down()
     {
-        //
+        Schema::table('answers', function (Blueprint $table) {
+            $table->longText('text')->nullable(false)->change(); 
+        });
     }
 }

@@ -26,6 +26,9 @@ class ChangeQuestionsNullable extends Migration
      */
     public function down()
     {
-        //
+        Schema::table('questions', function (Blueprint $table) {
+            $table->string('title')->nullable(false)->change(); 
+            $table->longText('text')->nullable(false)->change(); 
+        });
     }
 }
