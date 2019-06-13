@@ -11,5 +11,6 @@ class CategoryController extends Controller
     {
         $categories = DB::table('categories')->orderBy('name', 'asc')->get();
         return view('categories.index', compact('categories'));
+
     }
 }

@@ -3,7 +3,10 @@
         <h1>Categories</h1>
     </div>
 </section>
+<<<<<<< Updated upstream
  
+=======
+>>>>>>> Stashed changes
 <section id="categories">
     <div class="container">
         <ul class="list-group">
