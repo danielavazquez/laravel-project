@@ -3,7 +3,7 @@
         <h1>Categories</h1>
     </div>
 </section>
-
+ 
 <section id="categories">
     <div class="container">
         <ul class="list-group">
