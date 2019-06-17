@@ -12,16 +12,27 @@
 */
 
 Route::get('/questions','QuestionController@index');
-Route::get('/questions/1','QuestionController@show');
+Route::get('/questions/{id}','QuestionController@show')->name('question.show');
 
 
 Route::get('/questions/test','QuestionController@test');
 
 Route::get('/categories','CategoryController@index');
 
-Route::get('/answers/1','AnswerController@show');
-Route::post('/answers/1','AnswerController@vote');
+Route::get('/answers/{id}','AnswerController@show')->name('answer.show');
+Route::post('/answers/{id}','AnswerController@vote');
+
+
+
+// url('questions/1');
+// action('QuestionController@index' ,1);
+// route('question.show');
+//These are the same way to get to links with {id} but from bottom to top it is better
 
 
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

@@ -7,10 +7,10 @@ use App\Answer;
 
 class AnswerController extends Controller
 {
-    public function show()
+    public function show($id)
     {
         //11
-        $answer = Answer::findOrFail(1);
+        $answer = Answer::findOrFail($id);
 
         return view('answers/show', compact('answer')); //return answers show and pass the variable answer inside
     }

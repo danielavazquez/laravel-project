@@ -22,7 +22,8 @@
                 </div>
                 <div class="user-stat">
                     <span>5</span>
-                    <label>votes</label>
+                <label>vote</label>
+                <a href="{{route ('answer.show', $answer->id)}}">
                 </div>
             </div>
 

@@ -23,7 +23,7 @@
             </div>
             <div class="question-right">
                 <div class="question-name">
-                    <a href="#">SceneKit Swift - just play dae scene? Just getting white screen?</a>
+                <a href="{{ route ('question.show' , $question->id)}}">{{$question->title}}</a>
                 </div>
                 <div class="question-info">
                     asked at 2017-03-03 14:23:22 by <a href="">slavo</a>

@@ -48,13 +48,13 @@ class QuestionController extends Controller
 
     }
 
-    public function show()
+    public function show($id)
     {
         //eloquent code
-        $question = Question::where('id',1)
-        ->first();
-        $question = Question::find(1); //equivalent to the line above because 'id' is the PK
-
+        // $question = Question::where('id',1)
+        // ->first();
+        
+        $question = Question::find($id); //equivalent to the line above because 'id' is the PK
         dd($question->answers); //we want answers to this question
 
         return view('questions.show', compact('questions'));
